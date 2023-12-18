@@ -40,6 +40,7 @@
             this.textBoxBuscarNombre = new System.Windows.Forms.TextBox();
             this.btnBuscarNombre = new System.Windows.Forms.Button();
             this.btnBuscarID = new System.Windows.Forms.Button();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,7 +69,7 @@
             this.dgvUsuarios.Name = "dgvUsuarios";
             this.dgvUsuarios.RowHeadersWidth = 51;
             this.dgvUsuarios.RowTemplate.Height = 24;
-            this.dgvUsuarios.Size = new System.Drawing.Size(300, 252);
+            this.dgvUsuarios.Size = new System.Drawing.Size(417, 312);
             this.dgvUsuarios.TabIndex = 3;
             this.dgvUsuarios.DoubleClick += new System.EventHandler(this.dgvUsuarios_DoubleClick);
             // 
@@ -118,23 +119,23 @@
             // 
             // textBoxBuscarID
             // 
-            this.textBoxBuscarID.Location = new System.Drawing.Point(399, 20);
+            this.textBoxBuscarID.Location = new System.Drawing.Point(522, 15);
             this.textBoxBuscarID.Name = "textBoxBuscarID";
-            this.textBoxBuscarID.Size = new System.Drawing.Size(149, 22);
+            this.textBoxBuscarID.Size = new System.Drawing.Size(143, 22);
             this.textBoxBuscarID.TabIndex = 12;
             // 
             // textBoxBuscarNombre
             // 
-            this.textBoxBuscarNombre.Location = new System.Drawing.Point(128, 20);
+            this.textBoxBuscarNombre.Location = new System.Drawing.Point(190, 15);
             this.textBoxBuscarNombre.Name = "textBoxBuscarNombre";
-            this.textBoxBuscarNombre.Size = new System.Drawing.Size(149, 22);
+            this.textBoxBuscarNombre.Size = new System.Drawing.Size(143, 22);
             this.textBoxBuscarNombre.TabIndex = 13;
             // 
             // btnBuscarNombre
             // 
-            this.btnBuscarNombre.Location = new System.Drawing.Point(12, 17);
+            this.btnBuscarNombre.Location = new System.Drawing.Point(7, 12);
             this.btnBuscarNombre.Name = "btnBuscarNombre";
-            this.btnBuscarNombre.Size = new System.Drawing.Size(110, 28);
+            this.btnBuscarNombre.Size = new System.Drawing.Size(177, 28);
             this.btnBuscarNombre.TabIndex = 14;
             this.btnBuscarNombre.Text = "Buscar Nombre";
             this.btnBuscarNombre.UseVisualStyleBackColor = true;
@@ -142,19 +143,30 @@
             // 
             // btnBuscarID
             // 
-            this.btnBuscarID.Location = new System.Drawing.Point(283, 17);
+            this.btnBuscarID.Location = new System.Drawing.Point(339, 12);
             this.btnBuscarID.Name = "btnBuscarID";
-            this.btnBuscarID.Size = new System.Drawing.Size(110, 28);
+            this.btnBuscarID.Size = new System.Drawing.Size(177, 28);
             this.btnBuscarID.TabIndex = 15;
             this.btnBuscarID.Text = "Buscar ID";
             this.btnBuscarID.UseVisualStyleBackColor = true;
             this.btnBuscarID.Click += new System.EventHandler(this.btnBuscarID_Click);
             // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Location = new System.Drawing.Point(23, 321);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(177, 58);
+            this.btnLimpiar.TabIndex = 16;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(561, 340);
+            this.ClientSize = new System.Drawing.Size(677, 399);
+            this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnBuscarID);
             this.Controls.Add(this.btnBuscarNombre);
             this.Controls.Add(this.textBoxBuscarNombre);
@@ -189,6 +201,7 @@
         private System.Windows.Forms.TextBox textBoxBuscarNombre;
         private System.Windows.Forms.Button btnBuscarNombre;
         private System.Windows.Forms.Button btnBuscarID;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }
 

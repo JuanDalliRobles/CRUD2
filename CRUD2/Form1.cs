@@ -41,6 +41,10 @@ namespace CRUD2
             textBoxNombre.Text = string.Empty;
             textBoxEdad.Focus();
             textBoxEdad.Text = string.Empty;
+            textBoxBuscarID.Focus();
+            textBoxBuscarID.Text = string.Empty;
+            textBoxBuscarNombre.Focus();
+            textBoxBuscarNombre.Text = string.Empty;
             CargarDGV();
         }
         private void btnAgregar_Click(object sender, EventArgs e)
@@ -117,6 +121,11 @@ namespace CRUD2
             {
                 CargarDGV();
             }
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            Limpiar();
         }
     }
 }
